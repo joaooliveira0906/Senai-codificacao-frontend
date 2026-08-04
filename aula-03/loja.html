@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Loja</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #b71c1c;
+            padding: 25px;
+            margin: 0;
+        }
+
+        h2 {
+            color: #b71c1c;
+            border-bottom: 2px solid #b71c1c;
+            padding-bottom: 5px;
+        }
+
+        nav {
+            background: #212121;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff5252;
+        }
+
+        section {
+            background: white;
+            width: 80%;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        ul li {
+            margin: 8px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #b71c1c;
+            color: white;
+            padding: 12px;
+        }
+
+        td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background: #fce4ec;
+        }
+
+        tr:hover {
+            background: #ffcdd2;
+        }
+
+        fieldset {
+            border: 2px solid #b71c1c;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            color: #b71c1c;
+            font-weight: bold;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+        }
+
+        input:focus, select:focus {
+            border-color: #b71c1c;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #212121;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #b71c1c;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Minha Loja</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#cadastro">Cadastro</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="produtos">
+
+        <h2>Produtos</h2>
+
+        <ul>
+            <li>Eletrônicos</li>
+            <li>Roupas</li>
+            <li>Acessórios</li>
+        </ul>
+
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Categoria</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Celular</td>
+                    <td>R$ 1.500</td>
+                    <td>Eletrônicos</td>
+                </tr>
+
+                <tr>
+                    <td>Camiseta</td>
+                    <td>R$ 50</td>
+                    <td>Roupas</td>
+                </tr>
+
+                <tr>
+                    <td>Relógio</td>
+                    <td>R$ 200</td>
+                    <td>Acessórios</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+    <section id="cadastro">
+
+        <h2>Cadastro</h2>
+
+        <form>
+
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+
+                <br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Acesso</legend>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" minlength="8">
+
+                <br><br>
+
+                <label for="categoria">Categoria:</label>
+
+                <select id="categoria">
+                    <option>Eletrônicos</option>
+                    <option>Roupas</option>
+                    <option>Acessórios</option>
+                </select>
+
+            </fieldset>
+
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+    </section>
+
+</body>
+</html>
