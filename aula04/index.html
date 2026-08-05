@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Loja</title>
+</head>
+
+<body>
+    <h1>Mini Loja</h1>
+
+    <main>
+        <section id="produtos">
+            <h2>Produtos</h2>
+
+            <article>
+                <h3>Smartphone</h3>
+                <img src="img/iphone.jpg" alt="Smartphone laranja com três câmeras traseiras." width="250" height="250" loading="lazy">
+                <!-- Quando o caminho ficou errado, apareceu: imagem quebrada e o texto do atributo alt. -->
+            </article>
+
+            <article>
+                <h3>Camiseta</h3>
+
+                <figure>
+                    <img src="img/camisa.jpg" alt="Camiseta branca de algodão com gola redonda." width="250" height="250" loading="lazy">
+                    <figcaption>Camiseta branca - R$ 59,90</figcaption>
+                </figure>
+
+            </article>
+
+        </section>
+
+        <section>
+            <h2>Vídeo do produto</h2>
+
+            <video controls width="400" preload="metadata">
+                <source src="img/video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+
+        </section>
+
+        <section>
+            <h2>Descrição em áudio</h2>
+
+            <audio controls preload="metadata">
+                <source src="img/descricao-produto.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio.
+            </audio>
+
+        </section>
+
+        <section>
+            <h2>Conteúdo externo</h2>
+
+            <iframe
+                src="https://www.youtube.com/embed/a4cA0ET9DRY"
+                width="400"
+                height="225"
+                title="Vídeo externo sobre tecnologia"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido por: Nome 1 e Nome 2</p>
+    </footer>
+
+</body>
+</html>
