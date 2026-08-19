@@ -1,75 +1,177 @@
 body {
-  background-color: #f6f8fc;
-  font-family: Verdana, sans-serif;
-  margin: 0;
-  padding-top: 160px;
+    background-color: #f6f8fc;
+    color: #333333;
+    font-family: Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 160px;
+}
+
+h1, h2, h3 {
+    color: #7A2E1E;
 }
 
 #topo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #7A2E1E;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #7A2E1E;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 100;
+}
+
+#banner {
+    background-color: #f9ebea;
+    padding: 50px 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#banner h2 {
+    font-size: 2.2rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
 .menu {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .menu li {
-  display: inline-block;
-  margin-right: 16px;
+    display: inline-block;
+    margin-right: 16px;
 }
 
 .menu a {
-  text-decoration: none;
-  color: white;
-  padding: 10px 16px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 16px;
 }
 
 .grade {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
-  flex: 1;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-  position: relative;
+    position: relative;
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.destaque {
+    border: 3px solid #C0392B;
+    background-color: #fdf6f5;
 }
 
 .etiqueta {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #C0392B;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 6px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #C0392B;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.preco {
+    color: #C0392B;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .botao {
-  background-color: #7A2E1E;
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 8px;
-  transition: 0.3s;
-  border: none;
-  cursor: pointer;
+    background-color: #C0392B;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
 .botao:hover {
-  background-color: #5A2216;
+    background-color: #962d22;
+}
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela th {
+    background-color: #7A2E1E;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+.tabela td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.formulario {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.campo input, 
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 30px;
+}
+
+footer a {
+    color: #ecf0f1;
+}
+
+footer a[href="#topo"] {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #7A2E1E;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    z-index: 99;
 }
