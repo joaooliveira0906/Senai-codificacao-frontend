@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+    background-color: rgb(238, 227, 227);
+}
+
+.navbar {
+    display: flex; 
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px;
+    background-color:rgb(41, 34, 34);
+}
+
+.menu{
+    disolay: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+a {
+  color: #f1f0f5;
+  text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 420px;
+    background-color:rgb(82, 94, 107);
+}
+
+.hero-conteudo {
+    text-align: center; 
+    max-width: 600px;
+}
+
+.heroacoes {
+    display : flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.botao {
+  background-color: #00e676; 
+  color: #000000;           
+  border: none;              
+  padding: 10px 20px;       
+  border-radius: 5px;        
+  font-weight: bold;         
+  cursor: pointer;    
+  transition: 0.9s;      
+}
+
+.grade-jogos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-jogo {
+    flex: 1; 
+    min-width: 220px;
+    background-color: rgb(82, 94, 107);
+    padding: 20px;
+    border-radius: 5px;
+    border: 30px solid #ccc;
+}
+
+.icone-jogo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+    object-fit: contain;
+}
+
+.passo {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: rgb(225, 255, 89);
+    background-color: rgb(82, 94, 107);
+}
+.comunidade {
+  display: flex;
+
+  align-items: center;
+  
+  gap: 32px;
+  flex-wrap: wrap;
+   background-color: rgb(23, 41, 61);
+}
+
+
+.comunidade-info, .comunidade-texto {
+  display: flex;
+  
+  align-items: center;  
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: rgb(225, 255, 89);
+  background-color: rgb(82, 94, 107);
+  padding: 20px;
+}
+
+.links-rodape {
+  display: flex;
+  gap: 16px;
+}
+
+.botao, .card, a {
+  transition: all 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.card {
+  padding: 24px;
+}
+
+.container-flex {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.item-flex {
+  min-width: 280px;
+  flex: 1;
+}
+
+.titulo-secao {
+  background-color: rgb(23, 41, 61);
+}
+
