@@ -1,0 +1,33 @@
+body { background-color: lightblue; } 
+
+p {
+  color: #333333;
+  font-size: 18px;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: green;
+}
+
+.destaque {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+#topo h1 {
+  color: white;
+}
+
+.caixa {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 40px;
+  margin:0px;
+}

@@ -1,0 +1,383 @@
+/* =========================================================
+   FASE 1 — Reset e preparação
+   ========================================================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* =========================================================
+   FASE 2 — Identidade visual
+   ========================================================= */
+:root {
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-gold: #D4AF37;
+  --color-gold-light: #f4e5b2;
+  --color-text: #1A1A1A;
+
+  --font-titulos: 'Playfair Display', serif;
+  --font-texto: 'Lato', sans-serif;
+}
+
+body {
+  font-family: var(--font-texto);
+  color: var(--color-text);
+  background-color: var(--color-white);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-titulos);
+  color: var(--color-black);
+  font-weight: 700;
+}
+
+h1 { font-size: 2rem; margin: 0 0 5px 0; }
+h2 { font-size: 1.8rem; margin-bottom: 1rem; }
+h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--color-gold);
+  text-decoration: none;
+}
+
+/* =========================================================
+   FASE 3 — Largura e espaçamento
+   ========================================================= */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secao {
+  padding: 60px 0;
+}
+
+.secao:nth-of-type(even) {
+  background-color: #f7f5f0;
+}
+
+/* =========================================================
+   FASE 4 — Cabeçalho e menu
+   ========================================================= */
+#topo {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 25px 0;
+}
+
+#topo h1 {
+  color: var(--color-white);
+}
+
+.subtitulo {
+  color: #dddddd;
+  margin-bottom: 15px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+  color: var(--color-gold);
+  border-bottom: 2px solid var(--color-gold);
+}
+
+/* =========================================================
+   FASE 5 — Hero e botão principal
+   ========================================================= */
+.hero {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.hero h2 {
+  color: var(--color-white);
+  font-size: 2.2rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+  color: #dddddd;
+}
+
+.etiqueta {
+  display: inline-block;
+  background-color: var(--color-gold);
+  color: var(--color-black);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.botao {
+  display: inline-block;
+  background-color: var(--color-gold);
+  color: var(--color-black);
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao:hover {
+  background-color: var(--color-gold-light);
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   FASE 6 — Cards de serviços / Box Model
+   ========================================================= */
+.lista-cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gold);
+  border-radius: 12px;
+  padding: 25px;
+  flex: 1 1 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.card .botao {
+  padding: 8px 20px;
+  font-size: 0.9rem;
+}
+
+.card.destaque {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: 1px solid var(--color-gold);
+}
+
+.card.destaque h3 {
+  color: var(--color-white);
+}
+
+/* =========================================================
+   FASE 7 — Texto, preço e hierarquia
+   ========================================================= */
+.preco {
+  color: var(--color-gold);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.card.destaque .preco {
+  color: var(--color-gold);
+}
+
+.descricao {
+  color: #555555;
+  font-size: 0.95rem;
+}
+
+.card.destaque .descricao {
+  color: #dddddd;
+}
+
+/* =========================================================
+   FASE 8 — Tabela comparativa
+   ========================================================= */
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tabela th,
+.tabela td {
+  padding: 12px 15px;
+  border: 1px solid var(--color-gold);
+  text-align: left;
+}
+
+.tabela thead {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.tabela tbody tr:nth-child(even) {
+  background-color: #f7f5f0;
+}
+
+.tabela tbody tr:hover {
+  background-color: var(--color-gold-light);
+}
+
+/* =========================================================
+   FASE 9 — Galeria e imagens
+   ========================================================= */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.item-galeria {
+  margin: 0;
+  border: 1px solid var(--color-gold);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--color-white);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.item-galeria img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.item-galeria figcaption {
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--color-text);
+}
+
+/* =========================================================
+   FASE 10 — Formulário e estados de foco
+   ========================================================= */
+.formulario {
+  max-width: 600px;
+  background-color: #f7f5f0;
+  border: 1px solid var(--color-gold);
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.grupo-formulario {
+  margin-bottom: 18px;
+}
+
+.formulario label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-family: var(--font-texto);
+  font-size: 1rem;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
+}
+
+.formulario button.botao {
+  cursor: pointer;
+}
+
+/* =========================================================
+   FASE 11 — Rodapé
+   ========================================================= */
+.rodape {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 30px 0;
+  text-align: center;
+}
+
+.rodape p {
+  margin-bottom: 5px;
+  color: #dddddd;
+}
+
+.rodape a {
+  color: var(--color-gold);
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.rodape a:hover {
+  color: var(--color-gold-light);
+  text-decoration: underline;
+}
+
+/* =========================================================
+   Desafio opcional — Responsividade
+   ========================================================= */
+@media (max-width: 700px) {
+  .menu {
+    gap: 15px;
+  }
+
+  .lista-cards {
+    flex-direction: column;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+}

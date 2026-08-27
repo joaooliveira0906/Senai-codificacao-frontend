@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Loja</title>
+</head>
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Mini Loja</h1>
+
+        <!-- Menu de navegação -->
+        <nav>
+            <a href="#produtos">Produtos</a> |
+            <a href="#video">Vídeo</a> |
+            <a href="#contato">Contato</a> |
+            <a href="#local">Onde estamos</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Seção de produtos -->
+        <section id="produtos">
+            <h2>Produtos</h2>
+
+            <!-- Produto 1 -->
+            <article>
+                <h3>Smartphone</h3>
+
+                <img src="img/iphone.jpg"
+                     alt="Smartphone laranja com três câmeras traseiras"
+                     width="250"
+                     height="250"
+                     loading="lazy">
+
+                <p>R$ 2.999,00</p>
+            </article>
+
+            <!-- Produto 2 -->
+            <article>
+                <h3>Camiseta</h3>
+
+                <img src="img/camisa.jpg"
+                     alt="Camiseta branca de manga curta e gola redonda"
+                     width="250"
+                     height="250"
+                     loading="lazy">
+
+                <p>R$ 59,90</p>
+            </article>
+
+            <!-- Produto 3 -->
+            <article>
+                <h3>Fone de Ouvido</h3>
+
+                <img src="img/fone.jpg"
+                     alt="Fone de ouvido sem fio na cor preta"
+                     width="250"
+                     height="250"
+                     loading="lazy">
+
+                <p>R$ 199,00</p>
+            </article>
+
+            <!-- Imagem com legenda -->
+            <figure>
+                <img src="img/camisa.jpg"
+                     alt="Camiseta branca de manga curta e gola redonda"
+                     width="250"
+                     height="250"
+                     loading="lazy">
+
+                <figcaption>Camiseta branca — R$ 59,90</figcaption>
+            </figure>
+
+            <!-- Tabela de produtos -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Categoria</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Smartphone</td>
+                        <td>R$ 2.999,00</td>
+                        <td>Eletrônicos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Camiseta</td>
+                        <td>R$ 59,90</td>
+                        <td>Moda</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fone de Ouvido</td>
+                        <td>R$ 199,00</td>
+                        <td>Acessórios</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Seção de vídeo -->
+        <section id="video">
+            <h2>Vídeo do produto</h2>
+
+            <video controls width="400" preload="metadata">
+                <source src="midia/video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+
+            <audio controls preload="metadata">
+                <source src="midia/depoimento.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio.
+            </audio>
+        </section>
+
+        <!-- Vídeo do YouTube -->
+        <iframe
+            src="https://www.youtube.com/embed/CODIGO"
+            width="400"
+            height="225"
+            title="Vídeo demonstrativo do produto"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+
+        <!-- Localização -->
+        <section id="local">
+            <h2>Onde estamos</h2>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=..."
+                width="600"
+                height="450"
+                title="Mapa da localização da loja"
+                loading="lazy">
+            </iframe>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="msg">Mensagem:</label>
+                <textarea id="msg" name="msg" rows="4"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Desenvolvido por: Nome 1 e Nome 2</p>
+    </footer>
+
+</body>
+</html>

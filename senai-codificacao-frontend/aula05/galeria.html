@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria - Café Nobre</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header>
+    <h1>Café Nobre</h1>
+
+    <nav aria-label="Menu principal">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="galeria">
+        <h2>Galeria</h2>
+
+        <img src="cafeexpress.webp"
+             alt="Café expresso servido em uma xícara branca com pires"
+             width="300"
+             height="200"
+             loading="lazy">
+
+        <img src="capuccino.jpg"
+             alt="Xícara de capuccino com espuma de leite"
+             width="300"
+             height="200"
+             loading="lazy">
+
+        <img src="bolo.jpg"
+             alt="Fatia de bolo de chocolate com cobertura"
+             width="300"
+             height="200"
+             loading="lazy">
+
+        <img src="capuccino.jpg"
+             alt="Interior aconchegante do Café Nobre com mesas de madeira"
+             width="300"
+             height="200"
+             loading="lazy">
+    </section>
+
+    <section id="video-galeria">
+        <h2>Veja como preparamos</h2>
+
+        <video controls preload="metadata" width="480" height="270">
+            <source src="cafe-preparo.mp4" type="video/mp4">
+            <source src="cafe-preparo.webm" type="video/webm">
+            Seu navegador não suporta a exibição de vídeos. Você pode
+            <a href="cafe-preparo.mp4">baixar o vídeo aqui</a>.
+        </video>
+    </section>
+
+    <section id="audio-galeria">
+        <h2>Ouça um depoimento</h2>
+
+        <audio controls>
+            <source src="depoimento-cliente.mp3" type="audio/mpeg">
+            <source src="depoimento-cliente.ogg" type="audio/ogg">
+            Seu navegador não suporta a reprodução de áudio. Você pode
+            <a href="depoimento-cliente.mp3">baixar o áudio aqui</a>.
+        </audio>
+    </section>
+
+    <section id="video-youtube">
+        <h2>Conheça o Café Nobre</h2>
+
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/SEU_VIDEO_ID"
+            title="Vídeo institucional do Café Nobre"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </section>
+</main>
+
+<footer>
+    <p>Desenvolvido por: João Vitor</p>
+</footer>
+
+</body>
+</html>
