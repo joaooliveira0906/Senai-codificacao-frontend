@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Minha Loja Online</title>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Minha Loja Online</h1>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mini carrinho fixo no topo -->
+    <div class="mini-cart">
+      <span>🛒</span>
+      <span id="cart-count">0</span>
+      <div class="mini-cart-dropdown" id="mini-cart-dropdown">
+        <ul id="mini-cart-list"></ul>
+        <p id="mini-total">Total: R$ 0.00</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="banner">
+      <h2>Promoções Imperdíveis</h2>
+      <p>Os melhores eletrônicos com os melhores preços!</p>
+    </section>
+
+    <!-- Seção de produtos que será renderizada via JS ou exibida diretamente -->
+    <section id="produtos" class="products">
+      <h2>Produtos</h2>
+      <div id="product-list"></div>
+    </section>
+
+    <!-- Carrinho principal -->
+    <section class="cart">
+      <h2>Carrinho</h2>
+      <ul id="cart-list"></ul>
+      <p id="total">Total: R$ 0.00</p>
+      <button id="finalizar-compra">Finalizar Compra</button>
+      <p id="mensagem-compra"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Minha Loja Online</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
